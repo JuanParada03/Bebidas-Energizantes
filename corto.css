@@ -1,0 +1,92 @@
+body {
+    background: #27445D;
+    margin: 0px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*encabezado, titulo e hipervinculo*/
+
+.title_proyect-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+}
+
+.title-steam {
+    display: flex;
+    align-items: center;
+}
+
+.energy-drink {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 500%;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 4.5rem;
+    margin-left: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*hipervinculos word*/
+
+.haeder-links {
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    color: aliceblue; /* Puedes cambiar el color */
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.links::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1s ease;
+}
+
+.links:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* cortometraje */
+
+.corto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corto .title {
+    font-size: 35px;
+    margin-right: 70px;
+    font-weight:bold;
+}
+
+.corto div {
+    text-align: center;
+}
+
+a img {
+    border-radius: 50px;
+    border: solid 10px #fff;
+}
